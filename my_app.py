@@ -17,15 +17,14 @@ class MainWin(QWidget):
 
         '''apelarea metodei care creaza si configureaza elementele grafice'''
         #self.in...
-        #test
-
+        
         '''apelul metodei care leaga partea vizuala (exemplu butonul) de 
            partea functionala (functia care se executa la apasarea butonului)'''
         #self.con...
 
         '''sets the window appearance (label, size, location)'''
         #self.set_ap...
-        #wow
+        
         '''start:'''
         self.show()
 
