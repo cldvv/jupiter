@@ -31,11 +31,14 @@ class MainWin(QWidget):
         ''' creates graphic elements '''
     
     def next_click(self):
+        '''next click place holder'''
 
     def connects(self):
+        pass
 
     ''' sets what the window will look like (label, size, location) '''
     def set_appear(self):
+        print(3)
 
 app = QApplication([])
 mw = MainWin()
