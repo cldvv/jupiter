@@ -13,81 +13,24 @@ class FinalWin(QWidget):
         ''' the window in which a survey is being conducted '''
         super().__init__()
 
-        #getting data about the experiment
+        '''getting data about the experiment'''
         self.exp = exp
 
-        # creating and configuring graphic elements:
-        self.initUI()
+        ''' creating and configuring graphic elements:'''
+        #self.ini...
 
-        #establishes connections between elements
-        # self.connects()
+        '''establishes connections between elements'''
+        #self.conn...
 
-        #sets the window appearance (label, size, location)
-        self.set_appear()
+        '''sets the window appearance (label, size, location)'''
+        #self.set_ap...
         
         # start:
         self.show()
 
     def results(self):
-        if self.exp.person.age < 7:
-            self.index = 0
-            return "there is no data for this age"
-        self.index = (4 * (int(self.exp.test1) + int(self.exp.test2) + int(self.exp.test3)) - 200) / 10
-        if self.exp.person.age == 7 or self.exp.person.age == 8:
-            if self.index >= 21:
-                return txt_res1
-            elif self.index < 21 and self.index >= 17:
-                return txt_res2
-            elif self.index < 17 and self.index >= 12:
-                return txt_res3
-            elif self.index < 12 and self.index >= 6.5:
-                return txt_res4
-            else:
-                return txt_res5
-        if self.exp.person.age == 9 or self.exp.person.age == 10:
-            if self.index >= 19.5:
-                return txt_res1
-            elif self.index < 19.5 and self.index >= 15.5:
-                return txt_res2
-            elif self.index < 15.5 and self.index >= 10.5:
-                return txt_res3
-            elif self.index < 10.5 and self.index >= 5:
-                return txt_res4
-            else:
-                return txt_res5
-        if self.exp.person.age == 11 or self.exp.person.age == 12:
-            if self.index >= 18:
-                return txt_res1
-            elif self.index < 18 and self.index >= 14:
-                return txt_res2
-            elif self.index < 14 and self.index >= 9:
-                return txt_res3
-            elif self.index < 9 and self.index >= 3.5:
-                return txt_res4
-            else:
-                return txt_res5
-        if self.exp.person.age == 13 or self.exp.person.age == 14:
-            if self.index >= 16.5:
-                return txt_res1
-            elif self.index < 16.5 and self.index >= 12.5:
-                return txt_res2
-            elif self.index < 12.5 and self.index >= 7.5:
-                return txt_res3
-            elif self.index < 7.5 and self.index >= 2:
-                return txt_res4
-            else:
-                return txt_res5
-        if self.exp.person.age >= 15:
-            if self.index >= 15:
-                return txt_res1
-            elif self.index < 15 and self.index >= 11:
-                return txt_res2
-            elif self.index < 11 and self.index >= 6:
-                return txt_res3
-            elif self.index < 6 and self.index >= 0.5:
-                return txt_res4
-            else:
-                return txt_res5
+        self.index = 0
+        return 'blank'
 
     def initUI(self):
         ''' creates graphic elements '''
@@ -101,7 +44,8 @@ class FinalWin(QWidget):
 
     ''' sets what the window will look like (label, size, location) '''
     def set_appear(self):
-        self.setWindowTitle(txt_finalwin)
-        self.resize(win_width, win_height)
-        self.move(win_x, win_y)
-
+        '''functia care seteaza aparenta ferestrei (titlu, dimensiune, pozitia pe ecran)'''
+        '''in fisierul instr.py gasiti numele variabilelor in care sunt tinute titlul, latimea, lungimea si pozitia ferestrei'''
+        #self.setWindowTitle(TITLU_FEREASTRA)
+        #self.resize(LATIME_FEREASTRA, LUNGIME_FEREASTRA)
+        #self.move(POZTIA_X, POZITIA_Y)
