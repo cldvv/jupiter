@@ -24,7 +24,7 @@ class MainWin(QWidget):
 
         '''sets the window appearance (label, size, location)'''
         #self.set_ap...
-
+        #wow
         '''start:'''
         self.show()
 
