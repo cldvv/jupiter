@@ -25,7 +25,7 @@ class MainWin(QWidget):
         
 
         # start:
-        
+        self.show()
 
     def initUI(self):
         ''' cream si initializam elementele grafice din interfata'''
