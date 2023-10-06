@@ -16,29 +16,29 @@ class MainWin(QWidget):
         super().__init__()
 
         # creating and configuring graphic elements:
-        self.initUI()
+        
 
         #establishes connections between elements
-        self.connects()
+        
 
         #sets the window appearance (label, size, location)
-        self.set_appear()
+        
 
         # start:
-        self.show()
+        
 
     def initUI(self):
-        ''' creates graphic elements '''
+        ''' cream si initializam elementele grafice din interfata'''
     
     def next_click(self):
         '''next click place holder'''
 
     def connects(self):
-        pass
+        '''atasam la evenimentul de click al butonului next metoda asociata predefinita mai sus'''
 
-    ''' sets what the window will look like (label, size, location) '''
+    '''configuram modul in care va arata fereastra (titlu, marime, locatia pe ecran)'''
     def set_appear(self):
-        print(3)
+        '''setWindowTitle(...), resize(...),move(...)'''
 
 app = QApplication([])
 mw = MainWin()
